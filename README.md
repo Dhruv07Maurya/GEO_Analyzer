@@ -75,26 +75,29 @@ Open http://localhost:3000 (frontend) or http://localhost:8000/docs (FastAPI doc
 - Improvement recommendations
 
 ## Project Structure
-
+```markdown
 .
-├── backend/
-│   ├── main.py              # API entry point (FastAPI / Flask)
-│   ├── llm.py               # LLM calls and prompt logic
-│   ├── crawler.py           # Web scraping and content extraction
-│   ├── summary.py           # Summarization logic
+├── backend
+│   ├── main.py
+│   ├── llm.py
+│   ├── crawler.py
+│   ├── summary.py
 │   └── ...
-├── site-auditor-prototype/  # Next.js frontend
-│   ├── app/
+├── site-auditor-prototype
+│   ├── app
 │   │   ├── layout.tsx
-│   │   ├── api/
-│   │   │   ├── audit/route.ts
-│   │   │   ├── geo/route.ts
-│   │   │   └── fetch-content/route.ts
+│   │   ├── api
+│   │   │   ├── audit
+│   │   │   │   └── route.ts
+│   │   │   ├── geo
+│   │   │   │   └── route.ts
+│   │   │   └── fetch-content
+│   │   │       └── route.ts
 │   ├── next.config.mjs
 │   └── package.json
 ├── .env.example
-├── requirements.txt
 └── README.md
+```
 
 ## Contributing
 
